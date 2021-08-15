@@ -1,9 +1,9 @@
 # knowledgeGraphUPB
 
 App uses the following:
-Node Js Express - For creating api end points
-React JS - For creating frontend
-Cytoscape - For displaying graphs.
+i) Node Js Express - For creating api end points
+ii) React JS - For creating frontend
+iii) Cytoscape - For displaying graphs.
 
 Setting Up the Enviroment:
 
