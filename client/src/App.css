@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1rem !important;
+  background-color: #e6e6fa !important;
+  color: #5e5656;
+}
+
+.color-primary {
+  color: #5e5656;
+}
+
+.navigation-menu {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navigation-menu a {
+  color: white !important;
+}
+.navbar-brand {
+  font-size: 1rem !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.graph-wrapper {
+  min-height: 200px;
+  background-color: white;
+}
+
+.bg-RisikoUrsachen {
+  background-color: #eeacc2;
+}
+.bg-ActiveSum {
+  background-color: #dd6689;
+}
+.bg-PassiveSum {
+  background-color: #f95b5f;
+}
+.bg-Dimension {
+  background-color: #3583d1;
+}
+.bg-UseCase {
+  background-color: #ffbc55;
+}
+.bg-Risikofeld {
+  background-color: #d6c1a6;
+}
+.bg-RiskType {
+  background-color: #7ac58b;
+}
+
+.bg-Handlungsoptionen {
+  background-color: #909497;
+}
+
+.bg-Maßnahmen {
+  background-color: #7d3c98;
+}
+
+.bg-SpezifischeRisiken {
+  background-color: #283747;
+}
+
+.btn-add {
+  background-color: #4a00e0 !important;
+  border: #4a00e0;
+  opacity: 0.5;
+}
+
+.col-sm-3.py-0.text-truncate.myCustom2 {
+  flex: 0 0 auto;
+  width: 15%;
+}
+
+.col-sm-2.py-0.text-truncate.myCustom {
+  flex: 0 0 auto;
+  width: 15%;
+}
+
+.col-sm-4.py-0.text-truncate.myCustom3 {
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+.modal-header {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.modal-title {
+  color: white;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
