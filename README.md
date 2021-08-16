@@ -1,6 +1,6 @@
 # knowledgeGraphUPB
 
-######## App uses the following:
+###### App uses the following:
 i) Node Js Express - For creating api end points
 ii) React JS - For creating frontend
 iii) Cytoscape - For displaying graphs.
@@ -18,7 +18,7 @@ iii) Cytoscape - For displaying graphs.
 
 
 #### Steps to run the app:
-1. Run "npm install" in the root folder and client/ folder. This will install the dependencies for express app and react front end app.
-2. Alternatively, user can also "run npm run install-app" from the root folder. This will install dependencies for both root folder and client folder.
+1. Run ```npm install``` in the root folder and client/ folder. This will install the dependencies for express app and react front end app.
+2. Alternatively, user can also ```run npm run install-app``` from the root folder. This will install dependencies for both root folder and client folder.
 3. Update the database config in .env file
-4. Run "npm start" in root folder to start express api and client projects.
+4. Run ```npm start``` in root folder to start express api and client projects.
