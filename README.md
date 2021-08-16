@@ -7,11 +7,14 @@ iii) Cytoscape - For displaying graphs.
 
 Setting Up the Enviroment:
 
--Make Sure You Have Neo4j Installed.
+[x] Make Sure You Have Neo4j Installed.
 
--Import the file "database.dump" in your Neo4j DBMS with the following command:
-
+[x] Import the file "database.dump" in your Neo4j DBMS with the following command:
+```
 ".\bin\neo4j-admin load --from=your-file-location\database.dump --database=neo4j --force"
+```
+
+[x] Start the Noe4j Server before running the app
 
 
 Steps to run the app:
