@@ -40,10 +40,13 @@ router.get("/relationships", async (req, res) => {
         const id = req.params.id;
         const riskFieldId = req.params.riskFieldId;
         const optionForActionId = req.params.optionForActionId;
+
         const result = await session.run(
           `MATCH (n:RiskType)-[r]-(m) where id(n)=${id} RETURN id(n) as source_id, head(labels(n)) as source_label ,n.name as name, type(r) as relationship, head(labels(m)) as target_label,id(m) as target_id,properties(m) as properties 
         UNION ALL MATCH (n:Risikofeld)-[r]-(m) where id(n) in [${riskFieldId}] and NOT (n)-[r]-(m:RiskType) RETURN id(n) as source_id, head(labels(n)) as source_label ,n.name as name, type(r) as relationship, head(labels(m)) as target_label,id(m) as target_id,properties(m) as properties
-        UNION ALL MATCH (n:Handlungsoptionen)-[r]-(m) where id(n) in [${optionForActionId}]  RETURN id(n) as source_id, head(labels(n)) as source_label ,n.name as name, type(r) as relationship, head(labels(m)) as target_label,id(m) as target_id,properties(m) as properties`
+        UNION ALL MATCH (n:Handlungsoptionen)-[r]-(m:Maßnahmen) where id(n) in [${optionForActionId}]  RETURN id(n) as source_id, head(labels(n)) as source_label ,n.name as name, type(r) as relationship, head(labels(m)) as target_label,id(m) as target_id,properties(m) as properties
+        UNION ALL MATCH (n:Handlungsoptionen)-[r]-(m:RisikoUrsachen)-[r2]-(p:Risikofeld) where id(n) in [${optionForActionId}] and id(p) in [${riskFieldId}]  RETURN id(n) as source_id, head(labels(n)) as source_label ,n.name as name, type(r) as relationship, head(labels(m)) as target_label,id(m) as target_id,properties(m) as properties
+        `
         );
   
         const data = result.records.map((item) => {
